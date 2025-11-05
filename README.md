@@ -163,7 +163,7 @@ You are free to use, modify, and distribute it with attribution.
 ## 👨‍💻 Contact
 **Author:** Qamber Ali  
 **GitHub:** [qamberalipy](https://github.com/qamberalipy)  
-**Email:** (Add your email if you’d like)  
+**Email:** (qamber246@gmail.com)  
 
 ---
 
