@@ -1,0 +1,42 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables & secrets
+.env
+key.py
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Bytecode/misc
+*.bak
+*.log
+*.swp
+
+# Flask migrations
+migrations/__pycache__/
+migrations/versions/*.pyc
+
+# SQLite DB (if used)
+*.sqlite
+*.db
+
+# Compiled files
+*.so
+*.egg-info/
+dist/
+build/
