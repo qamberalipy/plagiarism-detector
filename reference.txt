@@ -1,0 +1,20 @@
+=== Artificial Intelligence ===
+Artificial Intelligence (AI) is a rapidly evolving field of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence.
+These include visual perception, speech recognition, decision-making, and natural language processing.
+AI has become a key technology in various industries such as healthcare, education, finance, and transportation.
+Machine learning, a subset of AI, allows systems to learn from experience and improve automatically without being explicitly programmed.
+Deep learning, on the other hand, uses neural networks to simulate human-like thinking processes.
+
+=== Computer Networks ===
+Computer networks allow devices to communicate and share data across the world.
+A network can be classified as a LAN (Local Area Network), MAN (Metropolitan Area Network), or WAN (Wide Area Network) depending on its geographical coverage.
+The Internet is the largest network, connecting billions of devices globally.
+Networking relies on communication protocols such as TCP/IP that define how data is transmitted and received.
+Routers, switches, and servers are essential components that ensure efficient data routing and connectivity.
+
+=== Databases ===
+A database is an organized collection of structured information, typically stored electronically in a computer system.
+Databases are managed using Database Management Systems (DBMS) like MySQL, PostgreSQL, and MongoDB.
+They provide mechanisms for data storage, retrieval, and manipulation through structured query languages such as SQL.
+Relational databases use tables with rows and columns, whereas non-relational (NoSQL) databases store data in key-value or document-based formats.
+Modern applications rely heavily on databases to maintain persistent and reliable data storage.
