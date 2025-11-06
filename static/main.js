@@ -110,7 +110,7 @@ $(document).ready(function () {
                 <p><strong>Total Tokens:</strong> ${result.lexical_analysis.user.total_tokens}</p>
                 <p><strong>Unique Tokens:</strong> ${result.lexical_analysis.user.unique_tokens}</p>
                 <p><strong>Keyword Count:</strong> ${result.lexical_analysis.user.keyword_count}</p>
-                <button class="btn btn-outline-success btn-sm mt-2 toggle-tokens" data-target="#userTokens">Show Tokens</button>
+                <button class="w-100 btn btn-outline-success btn-sm mt-2 toggle-tokens" data-target="#userTokens">Show Tokens</button>
                 <div id="userTokens" class="tokens-box mt-2 p-2 border rounded d-none text-start small bg-light">${userTokens}</div>
               </div>
             </div>
@@ -122,7 +122,7 @@ $(document).ready(function () {
                 <p><strong>Total Tokens:</strong> ${result.lexical_analysis.reference.total_tokens}</p>
                 <p><strong>Unique Tokens:</strong> ${result.lexical_analysis.reference.unique_tokens}</p>
                 <p><strong>Keyword Count:</strong> ${result.lexical_analysis.reference.keyword_count}</p>
-                <button class="btn btn-outline-primary btn-sm mt-2 toggle-tokens" data-target="#refTokens">Show Tokens</button>
+                <button class="w-100 btn btn-outline-primary btn-sm mt-2 toggle-tokens" data-target="#refTokens">Show Tokens</button>
                 <div id="refTokens" class="tokens-box mt-2 p-2 border rounded d-none text-start small bg-light">${refTokens}</div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,6 @@
 </head>
 
 <body class="bg-light">
- 
-</div>
-
   <div class="container py-5">
     <!-- Header -->
     <div class="text-center mb-5">
@@ -24,52 +22,55 @@
       <p class="text-muted">Upload a file or paste text to analyze.</p>
     </div>
 
-    <!-- Upload Section -->
-    <div class="card shadow-sm mb-4">
-      <div class="card-header bg-primary text-white">
-        <i class="bi bi-upload"></i> Upload Text, Word, or PDF File
-      </div>
-      <div class="card-body">
-        <form id="fileForm" enctype="multipart/form-data">
-          <div class="mb-3">
-            <label for="file_input" class="form-label">Select a file (.txt, .docx, .pdf)</label>
-            <input class="form-control" type="file" id="file_input" accept=".txt,.pdf,.docx">
+    <div class="row g-4 align-items-stretch">
+      <!-- Left Column -->
+      <div class="col-md-6 d-flex flex-column">
+        <div class="card shadow-sm mb-4 flex-fill">
+          <div class="card-header bg-primary text-white">
+            <i class="bi bi-upload"></i> Upload Text, Word, or PDF File
           </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- Text Analysis Section -->
-    <div class="card shadow-sm">
-      <div class="card-header bg-success text-white">
-        <i class="bi bi-pencil-square"></i> Text Input for Analysis
-      </div>
-      <div class="card-body">
-        <form id="analysisForm">
-          <div class="mb-3">
-            <label for="text_input" class="form-label">Enter or Paste Text</label>
-            <textarea class="form-control" id="text_input" rows="8"
-                      placeholder="Type, paste, or upload text here..."></textarea>
+          <div class="card-body">
+            <form id="fileForm" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="file_input" class="form-label">Select a file (.txt, .docx, .pdf)</label>
+                <input class="form-control" type="file" id="file_input" accept=".txt,.pdf,.docx">
+              </div>
+            </form>
           </div>
+        </div>
 
-          <div class="mb-3">
-           <button type="submit" class="btn btn-success w-100">
-            <i class="bi bi-play-circle"></i> Run Analysis
-          </button>
+        <div class="card shadow-sm flex-fill">
+          <div class="card-header bg-success text-white">
+            <i class="bi bi-pencil-square"></i> Text Input for Analysis
           </div>
+          <div class="card-body">
+            <form id="analysisForm">
+              <div class="mb-3">
+                <label for="text_input" class="form-label">Enter or Paste Text</label>
+                <textarea class="form-control" id="text_input" rows="8"
+                  placeholder="Type, paste, or upload text here..."></textarea>
+              </div>
 
-         
-        </form>
-      </div>`
-    </div>
-
-    <!-- Result Section -->
-    <div class="card shadow-sm mt-4 d-none" id="resultCard">
-      <div class="card-header bg-dark text-white">
-        <i class="bi bi-clipboard-check"></i> Analysis Result
+              <button type="submit" class="btn btn-success w-100">
+                <i class="bi bi-play-circle"></i> Run Analysis
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <div id="resultOutput" class="p-3 bg-light border rounded"></div>
+
+      <!-- Right Column -->
+      <div class="col-md-6 d-flex">
+        <div class="card shadow-sm flex-fill" id="resultCard">
+          <div class="card-header bg-dark text-white">
+            <i class="bi bi-clipboard-check"></i> Analysis Result
+          </div>
+          <div class="card-body">
+            <div id="resultOutput" class="p-3 bg-light border rounded" style="min-height: 400px;">
+              <!-- Result will appear here -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -81,7 +82,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.21/mammoth.browser.min.js"></script>
   <script src="{{ url_for('static', filename='main.js') }}"></script>
-
-
 </body>
+
+
 </html>
